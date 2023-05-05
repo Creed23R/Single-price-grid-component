@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="primer-hijo"></div>
+        <div class="segundo-hijo"></div>
+        <div class="tercer-hijo"></div>
+    </div>
+
+    <style>
+        body{
+            height: 100vh;
+        }
+        .contenedor {
+            background-color: red;
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+
+        .primer-hijo {
+            flex: 1 0 100%;
+            height: 50%;
+            background-color: blue;
+        }
+
+        .segundo-hijo,
+        .tercer-hijo {
+            flex: 1 0 50%;
+            height: 50%;
+        }
+
+        .segundo-hijo {
+            background-color: red;
+        }
+
+        .tercer-hijo {
+            background-color: green;
+        }
+    </style>
+</body>
+
+</html>
